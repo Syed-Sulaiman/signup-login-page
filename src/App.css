@@ -1,15 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
 
 * {
   box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   font-family: "Roboto", sans-serif;
 }
 
 body {
-  margin: auto;
+  margin:0 auto;
+  text-align: center;
 }
+
+.m-5-auto {
+  margin: 5rem auto
+}
+
 
 .primary-button {
   margin-top: 5rem;
@@ -27,7 +33,7 @@ body {
 
 .main-title,
 .main-para {
-    color: #f1f1f1
+    color: #330e0e;
 }
 
 .main-title {
@@ -42,13 +48,13 @@ body {
     text-Transform: capitalize
 }
 
-#reg_btn span {
+#reg_btn {
     display: inline-block;
     position: relative;
     transition: 0.5s;
 }
 
-#reg_btn span:after {
+#reg_btn:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -57,11 +63,11 @@ body {
     transition: 0.5s;
 }
 
-#reg_btn:hover span {
+#reg_btn:hover {
   padding-right: 25px;
 }
 
-#reg_btn:hover span:after {
+#reg_btn:hover:after {
   opacity: 1;
   right: 0;
 }
@@ -138,4 +144,4 @@ form span {
 /*    Home Page     */
 .home-page-title {
   color: #222
-}
+} 

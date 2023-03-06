@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import './App.css';
-import BackgroundImage from './assets/bg.jpg';
+import '../App.css';
+import BackgroundImage from '../assets/bg.jpg';
 
 const LandingPage=() => {
     return (
@@ -11,7 +11,7 @@ const LandingPage=() => {
             <p className="main-para text-center">join us now and don't waste time</p>
             <div className="buttons text-center">
                 <Link to="/login">
-                    <button className="primary-button">log in</button>
+                    <button className="primary-button" id="reg_btn">log in</button>
                 </Link>
                 <Link to="/register">
                     <button className="primary-button" id="reg_btn"><span>register </span></button>

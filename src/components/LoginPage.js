@@ -1,26 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Form from 'react-bootstrap/Form';
+import { Button } from "react-bootstrap";
 
-import "./App.css";
+import "../App.css";
 
 const LoginPage = () => {
     return(
         <div className="text-center m-5-auto">
             <h2>Welcome Back</h2>
             <Form action="/home">
-                <Form.Group>
-                    <Form.Label>E-Mail</Form.Label>
+
+                <Form.Group className="mb-3">
+                    <Form.Label>E-Mail</Form.Label><br/>
                     <Form.Control type="email" placeholder="E-Mail" name="first-name" />
+                </Form.Group><br/><br/>
+
+                <Form.Group className="mb-3">
+                    <Form.Label>Password</Form.Label><br/>
+                    <Form.Control type="password" placeholder="Password" name="password" /> <br/><br/>
+                    <Link to="/forget-password">Forget password?</Link><br/><br/>
                 </Form.Group>
 
-                <Form.Group>
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password" name="password" />
-                    <Link to="/forget-password">Forget password?</Link>
-                </Form.Group>
-
-                <Button id="sub-btn" type="submit">
+                <Button id="sub_btn" type="submit">
                     Login
                 </Button>
             </Form>

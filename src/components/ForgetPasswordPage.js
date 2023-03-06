@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import './App.css';
+import '../App.css';
 
 const ForgetPasswordPage = () => {
     return (
@@ -12,7 +12,7 @@ const ForgetPasswordPage = () => {
                 <p>
                     <label id="reset_pass_lbl">Email address</label><br/>
                     <input type="email" name="email" required />
-                </p>
+                </p><br />
                 <p>
                     <button id="sub_btn" type="submit">Send password reset email</button>
                 </p>
